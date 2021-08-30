@@ -6,7 +6,7 @@
 | GPU        | Intel(R) UHD Graphics                                     |
 | Network    | Intel(R) Ethernet Connection (10) I219-LM / AX201         |                                                                           
 | Disk       | WDS100T3X0C                                               |
-| Bootloader | OpenCore 0.7.2 Debug                                      |
+| Bootloader | OpenCore 0.7.2 Release                                      |
 
 # 状态
 ## 正常
