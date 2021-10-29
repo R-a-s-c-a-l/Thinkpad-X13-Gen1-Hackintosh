@@ -175,6 +175,8 @@
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<false/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
 			<true/>
 			<key>SignalAppleOS</key>
@@ -217,8 +219,13 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
-				<key>model</key>
-				<string>Intel UHD Graphics</string>
+				<key>force-online</key>
+				<data>AQAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>11</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -875,9 +882,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>alcid=11 igfxonln=1</string>
-				<key>prev-lang:kbd</key>
-				<data>emgtSGFuczoyNTI=</data>
+				<string>-v debug=0x100 keepsyms=1</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -990,9 +995,36 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>OpenRuntime.efi</string>
-			<string>OpenCanopy.efi</string>
-			<string>HfsPlus.efi</string>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>HfsPlus.efi</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1091,6 +1123,8 @@
 			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForceOcWriteFlash</key>
+			<false/>
 			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
@@ -1101,6 +1135,8 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
